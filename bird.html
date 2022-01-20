@@ -19,17 +19,20 @@
 <body>
   <div id="vanta-canvas"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.globe.min.js"></script>
-  <script type="text/javascript">
-    VANTA.GLOBE ({
-      el: '#vanta-canvas',
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+  <script>
+    VANTA.BIRDS({
+      el: "#vanta-canvas",
       mouseControls: true,
       touchControls: true,
-      gyroControls: true,
+      gyroControls: false,
       minHeight: 200.00,
-      minWeight: 200.00,
+      minWidth: 200.00,
       scale: 1.00,
-      scaleMobile: 1.00
+      scaleMobile: 1.00,
+      quantity: 5.00, //鳥の量(max:5)
+      wingSpan: 19.00, //翼幅
+      alignment: 31.00 //一直線にすること
     })
   </script>
 </body>
